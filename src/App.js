@@ -8,7 +8,10 @@ function App() {
 
   return (
     <div >
-        <HomePage/>
+      <switch>
+        <Route exact path='/' component={HomePage}/>
+        <Route exact path='/shop' component={ShopPage} />
+      </switch>
     </div>
   );
 }
